@@ -3,7 +3,7 @@ const MonogoJsChallengeUrl = 'https://www.monogo.pl/competition/input.txt';
 const companyName = "Monogo";
 const companyBuildingNumber = 14;
 
-async function getUser() {
+async function getProducts() {
     try {
         const response = await fetch(MonogoJsChallengeUrl);
 
@@ -55,7 +55,7 @@ function displayFinalResult(array = [], buildingNumber = 0, value = 0, name = ""
 /* #1 Po pierwsze, musisz wczytać dane z pliku input.txt 
 (plik ten znajdziesz pod linkiem https://www.monogo.pl/competition/input.txt) 
 za pomocą JS (nie kopiuj zawartości tego pliku!). */
-const dateFromMonogo = await getUser();
+const dateFromMonogo = await getProducts();
 
 /* #2 Musisz pogrupować produkty według ich opcji kolorów i rozmiarów za pomocą pola ID
  (zwróć uwagę na typy danych!). Jeden produkt może mieć tylko jedną opcję
